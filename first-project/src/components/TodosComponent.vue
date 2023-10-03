@@ -47,7 +47,7 @@ function onTodoDone(updatedTodo: Todo) {
   <input
     type="text"
     placeholder="Enter a task"
-    v-model="enteredText"
+    v-model.trim="enteredText"
     @keydown.enter="addTodo"
   />
   <button @click="addTodo">Add</button>

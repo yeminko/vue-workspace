@@ -1,9 +1,9 @@
 <template>
-  <ConditionalRendering2 />
+  <TodoApp />
 </template>
 
 <script setup lang="ts">
-import ConditionalRendering2 from './components/ConditionalRendering2.vue'
+import TodoApp from './components/TodoApp.vue'
 </script>
 
 <style scoped lang="scss"></style>

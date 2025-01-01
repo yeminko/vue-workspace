@@ -1,9 +1,9 @@
 <template>
-  <TodoApp />
+  <ComputedProperty />
 </template>
 
 <script setup lang="ts">
-import TodoApp from './components/TodoApp.vue'
+import ComputedProperty from './components/ComputedProperty.vue'
 </script>
 
 <style scoped lang="scss"></style>

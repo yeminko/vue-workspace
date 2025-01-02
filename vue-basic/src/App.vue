@@ -1,12 +1,9 @@
 <template>
-  <h1>Vue 3 Composition API</h1>
-  <WatchEffect />
-  <ComputedProperty />
+  <LifeCycle />
 </template>
 
 <script setup lang="ts">
-import ComputedProperty from './components/ComputedProperty.vue'
-import WatchEffect from './components/WatchEffect.vue'
+import LifeCycle from './components/LifeCycle.vue'
 </script>
 
 <style scoped lang="scss"></style>

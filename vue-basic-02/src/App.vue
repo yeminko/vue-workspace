@@ -1,12 +1,7 @@
 <template>
-  <SimpleComponent :username="name" />
+  <h1></h1>
 </template>
 
-<script setup lang="ts">
-import { ref } from 'vue'
-import SimpleComponent from './components/SimpleComponent.vue'
-
-const name = ref('John Doe')
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="scss"></style>

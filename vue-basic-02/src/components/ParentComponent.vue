@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import ChildComponent from './ChildComponent.vue'
+import ChildComponent from './ChildComponent2.vue'
 
 const name = ref('John Doe')
 const age = ref(25)

@@ -1,17 +1,18 @@
 <template>
-  <ChildComponent>
-    <h1>Hello World!</h1>
-    <template #main>
-      <p>This is the main content</p>
-    </template>
-    <template #footer>
-      <p>This is the footer content</p>
-    </template>
-  </ChildComponent>
+  <br /><br /><br /><br /><br /><br /><br />
+  <ChildComponent @greet="onGreet" />
+  <p>Message: {{ message }}</p>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 import ChildComponent from './components/ChildComponent.vue'
+
+const message = ref('')
+
+function onGreet(text: string) {
+  message.value = text
+}
 </script>
 
 <style scoped lang="scss"></style>

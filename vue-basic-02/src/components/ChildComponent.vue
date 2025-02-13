@@ -1,13 +1,20 @@
 <template>
-  <button @click="greet">Hello</button>
+  <h1>{{ greet }}</h1>
+  <button @click="setName('Samantha')">Change User</button>
 </template>
 
 <script setup lang="ts">
-const emit = defineEmits(['greet'])
+import { useUserStore } from '@/stores/user'
+import { storeToRefs } from 'pinia'
+import { onMounted } from 'vue'
 
-function greet() {
-  emit('greet', 'Hello from ChildComponent')
-}
+const userStore = useUserStore()
+const { name, greet } = storeToRefs(userStore)
+const { setName } = userStore
+
+onMounted(() => {
+  console.log('Name:', name)
+})
 </script>
 
 <style scoped lang="scss"></style>

@@ -1,18 +1,9 @@
 <template>
-  <br /><br /><br /><br /><br /><br /><br />
-  <ChildComponent @greet="onGreet" />
-  <p>Message: {{ message }}</p>
+  <StoreExample />
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import ChildComponent from './components/ChildComponent.vue'
-
-const message = ref('')
-
-function onGreet(text: string) {
-  message.value = text
-}
+import StoreExample from './components/StoreExample.vue'
 </script>
 
 <style scoped lang="scss"></style>
